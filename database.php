@@ -27,3 +27,9 @@
 	    die("select db connection failed: " . mysqli_connect_error());
 	}
     
+    //create location table -------------------------------------------------------
+	$sql = "CREATE TABLE `location_tab` (
+        `locationLatitude` VARCHAR(50) NOT NULL,
+        `locationLongitude` VARCHAR(50) NOT NULL,
+        `ID` INT NOT NULL AUTO_INCREMENT,
+        PRIMARY KEY (`ID`))";
