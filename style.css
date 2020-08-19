@@ -69,3 +69,11 @@ li a:hover {
     font-size: 12px;
     cursor: pointer;
 }
+
+.btn-submit:hover, .form button:active{
+    background: #555652;
+}
+
+#userTable{
+ background: #222;
+}
