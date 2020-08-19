@@ -58,3 +58,14 @@ li a:hover {
     margin-bottom: 10px;
     color: white;
 }
+
+.btn-submit {
+    outline: 0;
+    background: #F4BA0F;
+    width: 120px;
+    border: 0;
+    padding: 8px;
+    color: white;
+    font-size: 12px;
+    cursor: pointer;
+}
