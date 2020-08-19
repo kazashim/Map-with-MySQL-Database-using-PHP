@@ -113,3 +113,10 @@ $mysqli = new mysqli($host,$user,$pass,$db) or die($mysqli->error);
 
 			google.maps.event.addDomListener(window, 'load', initialize);
     	</script>
+
+
+    	<!--remenber to put your google map key-->
+	    <script async defer src="https://maps.googleapis.com/maps/api/js?key=xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx&callback=initMap"></script>
+
+	</body>
+</html>
