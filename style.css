@@ -89,3 +89,15 @@ li a:hover {
     /*border-collapse: collapse;*/
     width: 100%;
 }
+
+.outer-scontainer th {
+    border: 1px solid #555652;
+    padding: 5px;
+    text-align: center;
+}
+
+.outer-scontainer td {
+    border: 1px solid #555652;
+    padding: 5px;
+    text-align: center;
+}
