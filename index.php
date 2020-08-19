@@ -88,3 +88,28 @@ $mysqli = new mysqli($host,$user,$pass,$db) or die($mysqli->error);
 
 			  mark = 'img/mark.png';
 			  flag = 'img/flag.png';
+
+              startPoint = {<?php echo'lat:'. $latitudes[0] .', lng:'. $longitudes[0] ;?>};
+			  endPoint = {<?php echo'lat:'.$latitudes[$lastcount] .', lng:'. $longitudes[$lastcount] ;?>};
+
+			  var marker = new google.maps.Marker({
+			  	position: startPoint,
+			  	map: map,
+			  	icon: mark,
+			  	title:"Start point!",
+			  	animation: google.maps.Animation.BOUNCE
+			  });
+
+			  var marker = new google.maps.Marker({
+			  position: endPoint,
+			   map: map,
+			   icon: flag,
+			   title:"End point!",
+			   animation: google.maps.Animation.DROP
+			});
+
+			  RoutePath.setMap(map);
+			}
+
+			google.maps.event.addDomListener(window, 'load', initialize);
+    	</script>
