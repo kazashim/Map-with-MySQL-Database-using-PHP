@@ -19,5 +19,11 @@
 	} else {
 	    echo "Error creating database: " . mysqli_error($conn) . "<br>";
     }
-    
+
+    $dbname = 'location_db';
+	mysqli_select_db ( $conn , $dbname);
+
+	if (!$conn) {
+	    die("select db connection failed: " . mysqli_connect_error());
+	}
     
