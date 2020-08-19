@@ -77,3 +77,15 @@ li a:hover {
 #userTable{
  background: #222;
 }
+
+.outer-scontainer {
+    color: #E8E9EB;
+    background: #333;
+    border: #555652 1px solid;
+    padding: 10px;
+}
+
+.outer-scontainer table {
+    /*border-collapse: collapse;*/
+    width: 100%;
+}
