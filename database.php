@@ -33,3 +33,12 @@
         `locationLongitude` VARCHAR(50) NOT NULL,
         `ID` INT NOT NULL AUTO_INCREMENT,
         PRIMARY KEY (`ID`))";
+
+if(mysqli_query($conn, $sql)){
+    echo "Table location created successfully<br>";
+} else {
+    echo "Error creating location table: " . mysqli_error($conn). "<br>";
+}	
+        
+mysqli_close($conn);
+?>
