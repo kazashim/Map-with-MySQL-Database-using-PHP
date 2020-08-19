@@ -6,3 +6,9 @@ body{
     text-align: center;
     background: #555; /*#555652;*/
 }
+
+nav{
+    margin: 0;
+    padding:0;
+    margin-bottom: 10px;
+}
