@@ -25,3 +25,8 @@ $mysqli = new mysqli($host,$user,$pass,$db) or die($mysqli->error);
      $longitudes[] = $row['locationLongitude'];
      $coordinates[] = 'new google.maps.LatLng(' . $row['locationLatitude'] .','. $row['locationLongitude'] .'),';
  }
+
+ //remove the comaa ',' from last coordinate
+ $lastcount = count($coordinates)-1;
+ $coordinates[$lastcount] = trim($coordinates[$lastcount], ",");	
+?>
