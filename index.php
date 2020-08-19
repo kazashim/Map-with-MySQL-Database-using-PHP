@@ -77,3 +77,14 @@ $mysqli = new mysqli($host,$user,$pass,$db) or die($mysqli->error);
 					}
 			  	?>
 			  ];
+
+              var RoutePath = new google.maps.Polyline({
+			    path: RouteCoordinates,
+			    geodesic: true,
+			    strokeColor: '#1100FF',
+			    strokeOpacity: 1.0,
+			    strokeWeight: 10
+			  });
+
+			  mark = 'img/mark.png';
+			  flag = 'img/flag.png';
