@@ -1,8 +1,8 @@
 <?php
 /*
-|Author @ Kazashim
-|
-|
+|Author: Kazashim Kuzasuwat
+|Email: Kazashim@cynojine.com
+|Website: https://cynojine.com
 */
 	$servername = "localhost";
 	$username = "root";
