@@ -55,3 +55,25 @@ $mysqli = new mysqli($host,$user,$pass,$db) or die($mysqli->error);
 					</div>
 	            </form>
 	        </div>
+
+            <div id="map" style="width: 100%; height: 80vh;"></div>
+
+		<script>
+			function initMap() {
+			  var mapOptions = {
+			    zoom: 18,
+			    center: {<?php echo'lat:'. $latitudes[0] .', lng:'. $longitudes[0] ;?>}, //{lat: --- , lng: ....}
+			    mapTypeId: google.maps.MapTypeId.SATELITE
+			  };
+
+			  var map = new google.maps.Map(document.getElementById('map'),mapOptions);
+
+			  var RouteCoordinates = [
+			  	<?php
+			  		$i = 0;
+					while ($i < count($coordinates)) {
+						echo $coordinates[$i];
+						$i++;
+					}
+			  	?>
+			  ];
