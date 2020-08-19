@@ -38,3 +38,12 @@ li a{
     border-right: 1px solid #555652;
     text-decoration: none;
 }
+
+li a img{
+    width: 30px;
+    height: 30px;
+}
+
+li a:hover {
+    background-color: #555652;
+}
